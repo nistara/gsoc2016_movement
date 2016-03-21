@@ -120,7 +120,7 @@ dbGetQuery(con, "SELECT column_name, data_type FROM information_schema.columns
 #     and it is this format that is used to transfer and store the vector geometry
 #     information in databases. 
 #     The coordinate information from 'fires' was thus stored as a WKB, and we can 
-#     access or query it easily once we convert it to the WKT format. 
+#     access or query it easily once we convert it to the WKT format (during query). 
 #
 # 2.  The time information from 'fires' is stored as  character varying, and we would
 #     like to convert it to a 'timestamp', so that we can query it easily. 
@@ -128,7 +128,7 @@ dbGetQuery(con, "SELECT column_name, data_type FROM information_schema.columns
 # 3.  Lastly, we create indexes for both time and point data.
 #
 #     For creating indexes, and for converting the date field to timestamp, we use
-#     PostGIS, which an be enabled by creating extensions for it.
+#     PostGIS, which can be enabled by creating extensions for it.
 
 
 
