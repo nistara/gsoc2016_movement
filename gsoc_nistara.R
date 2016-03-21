@@ -33,7 +33,7 @@ points(subfires, col = "green")
 
 
 # =========================================================================
-# Test: Build SQL function that select the points
+# Test: Build SQL function that selects the points
 # within a spatio-temporal window
 # =========================================================================
 
