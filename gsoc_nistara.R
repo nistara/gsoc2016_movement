@@ -155,7 +155,7 @@ pgIndex(con, "fires", "wkb_geometry", "geom_idx", method = "gist")
 # Create index for time ---------------------------------------------------
 # =========================================================================
 
-# First, convert the date filed to a timestamp
+# First, convert the date field to a timestamp
 pgAsDate(con, "fires", date = "time", tz = NULL, display = TRUE, exec = TRUE)
 
 # Create index for the time
@@ -213,7 +213,7 @@ fires_subset <- sql_query(x_min, x_max, y_min, y_max, time_min, time_max, con)
 # the above in different ways, e.g. make a function which creates a query; this query 
 # in turn being a parameter for the sql_query function above (instead of feeding the ranges 
 # in it directly). We could also make a function to create a connection. Other variations include 
-# specifing fields for the wkb_geomtery and time columns (because not all databases will
+# specifying fields for the wkb_geomtery and time columns (because not all databases will
 # have the same column names).
 
 
